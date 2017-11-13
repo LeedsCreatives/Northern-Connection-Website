@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "Axis Extra Bold";
+    src: url("../font/AXIS-ExtraBold.eot") format("eot"),
+    url("../font/AXIS-ExtraBold.ttf") format("ttf"),
+    url("../font/AXIS-ExtraBold.woff") format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Axis Extra Bold";
+}
+
+/* Body */
+
+body {
+    background: url("../img/hero.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto !important;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.content {
+    flex: 1 0;
+
+}
+
+/* Nav */
+.nav-logo {
+    max-height: 2.75em;
+    margin: 0.75em;
+}
+
+.title-bar {
+    background: none;
+}
+
+.title-bar .menu-icon {
+    margin-right: 1.5em;
+}
+
+.menu-text img {
+    height: 3em;
+}
+
+.nav-tickets {
+    border: 0.2em solid white;
+    margin-left: 0.4em;
+}
+
+.nav-active {
+    background-color: white;
+    color: #121224 !important;
+}
+
+.nav-social {
+    font-size: 2em;
+}
+
+.nav-social:hover {
+    background-color: transparent !important;
+
+}
+
+.menu li a {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: "Axis Extra Bold";
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: #121224 !important;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.menu .menu-text a:hover {
+    background-color: transparent;
+    transition: none;
+}
+
+@media only screen and (max-width: 40em)  {
+    .menu li a {
+        width: 100%;
+    }
+    
+    .nav-tickets {
+        border: none;
+        margin-left: 0;
+    }
+}
+/* Hero */
+
+.hero-subtitle {
+    font-family: "Axis Extra Bold";
+    font-size: 1.8em;
+    margin-top: -0.4em;
+}
+
+.hero-date {
+    font-family: "Axis Extra Bold";
+    font-size: 1.4em;
+    margin-top: 1.4em;
+}
+
+.hero-location {
+    font-family: "Axis Extra Bold";
+    font-size: 1.4em;
+}
+
+.hero-logo {
+    width: 30%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+
+.hero-button {
+    background-color: transparent;
+    border: 0.25em solid white;
+    margin-top: 1.8em;
+    font-family: "Axis Extra Bold";
+}
+
+.hero-button:hover, .hero-button:active, .hero-button:focus {
+    color: #181e46;
+    background-color: white;
+}
+
+.hero-full-screen {
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: url("../img/hero.png") center center no-repeat;
+    background-size: cover;
+}
+
+.hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+}
+
+.hero-full-screen .top-content-section {
+    width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+    padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+}
+
+.top-bar {
+    background: transparent;
+}
+
+.top-bar .menu {
+    background: transparent;
+}
+
+@media only screen and (max-width: 40em)  {
+    .top-bar .menu {
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-bottom: 1em;
+    }
+}
+
+.top-bar .menu-text {
+    color: #fefefe;
+}
+
+.top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #2a2a2a;
+}
+
+.footer-credits {
+    font-family: "Axis Extra Bold";
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.footer-credits-grid {
+    padding-bottom: 1.5em;
+}
+
+.bottom-footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #1a1a1a;
+}
+
+.bottom-footer-copyright {
+    color: white;
+    font-family: "Axis Extra Bold";
+    text-align: center;
+}
+
+@media only screen and (max-width: 40em)  {
+    .bottom-footer-copyright {
+        font-size: 0.8em;
+    }
+}
+
+.bottom-footer-copyright a {
+    color: black;
+    background-color: white;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.bottom-footer-copyright a:hover {
+    color: white;
+    background-color: black;
+}
+
+.footer-container {
+    margin-top: 2em;
+}
+/* Page */
+
+.page-content {
+    margin: 0.1em;
+    margin-top: 1em;
+    padding: 0.5em;
+    padding-top: 1em;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-header {
+    color: white;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.5em;
+}
+@media only screen and (min-width: 25em)  {
+    .page-header {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (min-width: 40em)  {
+    .page-header {
+        font-size: 6em;
+    }
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Schedule */
+
+.schedule-time {
+    font-family: "Axis Extra Bold";
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    vertical-align: middle;
+}
+
+.schedule-time.panel {
+    background-color: #00c6ff;
+}
+
+.schedule-time.keynote {
+    background-color: #ff8a00;
+}
+
+.schedule-time.social {
+    background-color: #6600ff;
+}
+
+.schedule-time.networking {
+    background-color: #ff3c00;
+}
+
+.schedule-time span {
+    vertical-align: middle;
+}
+
+.schedule-info {
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    padding-left: 1.5em;
+}
+
+.schedule-info p {
+    margin-top: 1em;
+}
+
+.schedule-info.multi-top {
+    margin-bottom: 0.8em;
+}
+
+.schedule-row {
+    margin-top: 0.8em;
+}
+
+.schedule-meta {
+    font-family: "Axis Extra Bold";
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+.schedule-meta-tag {
+    background-color: black;
+    color: white;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+}
